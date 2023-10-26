@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(10, 10, 10, 0);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(10, 10, 10, 0.612);
+  border-radius: 20px;
+}
+i {
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+  top: -11px;
+  transform: translate(-50%, -50%);
+}
+#myCarousel {
+  position: relative;
+  /* top: 30px; */
+}
+#mycarousel .carousel-inner {
+  color: gray;
+  font-weight: bold;
+}
+#myCarousel .carousel-inner .carousel-item .cover .carousel-caption {
+  font-weight: bold;
+}
+header nav {
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 6px 6px rgb(0 0 0 / 80%);
+}
+#section1 {
+  color: white;
+}
+p {
+  padding: 10px;
+  line-height: 1.6;
+}
+.services .row h3 {
+  font-size: x-large;
+  font-weight: bold;
+}
+.layout {
+  width: 100%;
+  background-image: url(../imges/02.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  bottom: 65px;
+  height: 850px;
+}
+.Mainlogo {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 850px;
+  position: relative;
+  top: -17px;
+  height: 850px;
+}
+
+/* ########################################============================================================================== */
+@media (min-width: 350px) {
+  .layout{
+    height: 1850px;
+    
+  }
+  .Mainlogo{
+    height: 1868px;
+  }
+  .sr1 .services .sr-item1,
+  .sr1 .services .sr-item2,
+  .sr1 .services .sr-item3,
+  .sr1 .services .sr-item4,
+  .sr1 .services .sr-item5 {
+    position: relative;
+    top: 30px;
+  }
+  .hr {
+    width: 60%;
+    margin: auto;
+  }
+  .services {
+    padding-bottom: 20px;
+  }
+  .services .sr-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+/* ========================================================= */
+@media (min-width: 370px) {
+  .layout{
+    height: 1800px;
+  }
+  .Mainlogo{
+    height: 1818px;
+  }
+  .services {
+    padding-bottom: 20px;
+  }
+  .services .sr-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+/* ==================================================== */
+@media (min-width: 390px) {
+  .sl-form .pop-content {
+    height: 600px;
+  }
+  .services {
+    padding-bottom: 20px;
+  }
+  .services .sr-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+/* ========================================================== */
+@media (min-width: 400px) {
+  .services {
+    padding-bottom: 20px;
+  }
+  .services .sr-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .layout{
+    height: 1750px;
+  }
+  .Mainlogo{
+    height: 1770px;
+  }
+}
+/* ====================================================== */
+@media (min-width: 536px) {
+  .services {
+    padding-bottom: 20px;
+  }
+  .services .sr-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+/* ======================================= */
+@media (min-width: 750px) {
+  .services {
+    padding-bottom: 20px;
+  }
+  .services .sr-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .layout{
+    height: 1150px;
+  }
+  .Mainlogo{
+    height: 1155px;
+  }
+}
+/* =================================================== */
+@media (min-width: 900px) {
+  .services {
+    padding-bottom: 20px;
+  }
+  .services .sr-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+/* ================================================ */
+@media (min-width: 1000px) {
+  header nav ul {
+    position: relative;
+    left: 0px;
+  }
+  .services {
+    padding-bottom: 20px;
+  }
+  .services .sr-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .layout{
+    height: 1050px;
+  }
+  .Mainlogo{
+    height: 1055px;
+  }
+}
+/* ==================================== */
+@media (min-width: 1300px) {
+  header nav ul {
+    position: relative;
+    left: 400px;
+  }
+  .layout{
+    height: 870px;
+    
+  }
+  .Mainlogo{
+    height: 870px;
+  }
+  .hr {
+    width: 20%;
+    margin: auto;
+  }
+  .services {
+    padding-bottom: 20px;
+  }
+  .services .sr-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+

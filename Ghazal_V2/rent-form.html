@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FOR RENT</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark container-fluid">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./imges/01.png" alt="Logo" style="height: 50px; border-radius:70px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">
+                                <span data-i18n="home">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./next.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span data-i18n="industry">Industry</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./Buy-form.html" data-i18n="buy">Buy & Sale</a></li>
+                                <li><a class="dropdown-item" href="./rent-form.html" data-i18n="rent">Rent</a></li>
+                                <li><a class="dropdown-item" href="./full-project-form.html" data-i18n="full">Full
+                                        Projects</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./real-estate.html" data-i18n="realestate"><span>Real
+                                    Estate</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./Other-services.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span data-i18n="services">Services</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./form-one.html" data-i18n="acc">Accounting
+                                        Business</a></li>
+                                <li><a class="dropdown-item" href="./form-two.html" data-i18n="con">Consulting
+                                        Business</a></li>
+                                <li><a class="dropdown-item" href="./form-three.html" data-i18n="law">Lawyer
+                                        Business</a></li>
+                                <li><a class="dropdown-item" href="./form-four.html" data-i18n="spe">Specialized
+                                        Business</a></li>
+                                <li><a class="dropdown-item" href="./form-five.html" data-i18n="lic">Licensing
+                                        Business</a></li>
+                                <li><a class="dropdown-item" href="./form-six.html" data-i18n="exe">Executive
+                                        Business</a></li>
+                                <li><a class="dropdown-item" href="./Other-services.html" data-i18n="other">Other
+                                        Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">
+                                <span data-i18n="about">About us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./career.html" data-i18n="career">Career</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <select class="mt-2 px-1" style="border-radius: 5px;">
+                            <option class="disabled" data-i18n="language">Language</option>
+                            <option value="en" data-i18n="english">English</option>
+                            <option value="ar" data-i18n="arabic">Arabic</option>
+                        </select>
+                        <a class="nav-link p-2 fw-bold fs-5 py-1 " href="tel:+201069714555" ><i
+                            class="fa-thin fa-mobile-button fa-lg py-1"></i>HotLine</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex" style="position: fixed; right: 9px; bottom: 5px; z-index: 50;">
+            <button type="button" class="btn btn-dark fw-bold " id="darkBtn" style="width: 60px; height: 35px;"><i
+                    class="bi" id="toggoleDarkMode"></i></button>
+        </div>
+    </header>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="align-items-center g-lg-5 py-5 container-fluid form1 d-flex flex-wrap">
+        <div class="col-md-6 text-lg-start">
+            <h2 class="display-5 fw-bold lh-1  mb-3" style="color: #6c757d;padding: 10px">Vertically centered hero sign-up form</h2>
+            <p class="fs-4" style="padding: 10px">Below is an example form built entirely with Bootstrap’s
+                form controls. Each
+                required form group has a validation state that can be triggered by attempting to submit the form
+                without completing it.</p>
+            <p class="fs-4" dir="rtl" style="padding: 10px">إن جميع العضلات في أجسامنا مدعمة بالأعصاب المتصلة من كافة
+                أنحاء الجسم بالنخاع الشوكي
+                والدماغ. وهذا الاتصال العصبي هو ثنائي الاتجاه، أي إن العصب يتسبَّب في تقلصات العضلات بناءً على إشارات
+                الدماغ، ويقوم في الوقت نفسه بإرسال معلومات عن حالة العضلات إلى الدماغ
+            </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-4 bg-body-tertiary" action="">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="company name">
+                    <label for="floatingInput">Company Name / اسم الشركة</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="phone numbr" required="">
+                    <label for="floatingInput">Phone Number / رقم الهاتف</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                        required="">
+                    <label for="floatingInput">Email Address / البريد الاكتروني</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="company name">
+                    <label for="floatingInput">Company Address / عنوان الشركة</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="validationCustom04" required="">
+                        <option selected="" disabled="">Choose...</option>
+                        <option>For Sale / معروض للايجار</option>
+                        <option>For Buying / مطلوب للايجار</option>
+                    </select>
+                    <label for="floatingInput">Required Service / الخدمة المطلوبة</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="validationCustom04" required="">
+                        <option selected="" disabled="" value="">Choose....</option>
+                        <option>Manufacturing / تصنيع</option>
+                        <option>Storage / تخزين</option>
+                    </select>
+                    <label for="floatingInput">Required Section / القطاع المطلوبة</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="validationCustom04" required="">
+                        <option selected="" disabled="" value="">Choose....</option>
+                        <option>دوائي</option>
+                        <option>غذائي</option>
+                        <option>غزل ونسيج وملابس جاهزة</option>
+                        <option>صناعات هندسيه</option>
+                        <option>صناعات كيماويه وبلاستيكيه</option>
+                        <option>صناعات ثقيلة</option>
+                        <option>صناعات الكترونيه</option>
+                        <option>صناعات الاثاث</option>
+                        <option>صناعات تعدينيه</option>
+                        <option>صناعات مواد البناء</option>
+                        <option>ثلاجات تجميد وتبريد</option>
+                        <option>صناعات الطاقة الشمسية والكهربائيه</option>
+                        <option>الانشطة اللوجستيه والتخزين</option>
+                        <option>انشطة اخري</option>
+                    </select>
+                    <label for="floatingInput">Required Activity / النشاط المطلوب</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="validationCustom04" required="">
+                        <option selected="" disabled="" value="">Choose....</option>
+                        <option>New Cairo City / مدينة القاهرة الجديدة</option>
+                        <option>10th Of Ramdan City / مدينة العاشر من رمضان</option>
+                        <option>Badr City / مدينة بدر</option>
+                        <option>Oubor City / مدينة العبور</option>
+                        <option>El-Sadat City-October / مدينة السدات اكنوبر</option>
+                        <option>Borg Alarab City / مدينة برج العرب</option>
+                        <option>El-Een El-Sokhna City-Swees / العين السخنة السويس</option>
+                        <option>15 May City / مدينة 15 مايو</option>
+                        <option>Sadat City / مدينة السادات</option>
+                        <option>Other Cities / مدن اخري</option>
+                    </select>
+                    <label for="floatingInput">Required City / المدينة المطلوبة</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="date">
+                    <label for="floatingInput">Required Total Area / اجمالي المساحة المطلوبة</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="validationCustom04" required="">
+                        <option selected="" disabled="" value="">Choose...</option>
+                        <option>Metal truss / جمالون معدني</option>
+                        <option>Concrete building / مبني خرسانه</option>
+                    </select>
+                    <label for="floatingInput">Required Building / المباني المطلوبه</label>
+
+                    <div class="d-flex">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="الطول">
+                            <label for="floatingInput">Lenght /الطول</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="العرض">
+                            <label for="floatingInput">Width /العرض</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="الارتفاع">
+                            <label for="floatingInput">Height /الارتفاع</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-floating mb-3 d-block">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Fire System / دفاع
+                            مدني</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Water / مياه</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Gas / غاز</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Sanitation / صرف
+                            صحي</label>
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="date">
+                    <label for="floatingInput">Required Electrical Power / القدرة الكهربائية</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="date">
+                    <label for="floatingInput">Observed Price / السعر المرصود</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="date">
+                    <label for="floatingInput">Start time / بداية التشغيل</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text-area" class="form-control" id="floatingPassword" placeholder="date">
+                    <label for="floatingInput">Choose date for contact / تحديد موعد للتواصل</label>
+                </div>
+                <div class="mb-3">
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" aria-label="With textarea" id="floatingInput"
+                        placeholder="company address"></textarea>
+                    <label for="floatingInput">Description / تعليق</label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary fw-bold" type="submit" data-i18n="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <footer class="bd-footer border-top border-bottom text-center" id="footer">
+        <div class="container-fluid py-3 py-md-3 px-3 px-md-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3 text-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="./imges/01.png" alt="Logo"
+                            style=" height: 100px; border-radius:70px; margin-bottom: 20px;">
+                    </a>
+                    <h2 class="fw-bold" style="color: #6c757d;padding: 5px;">Ghazal Global Investment</h2>
+                    <!-- <p class="fw-bold px-3" style="color: #6c757d; padding: 5px;">Lorem ipsum dolor Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit.
+                        Voluptas
+                        exercitationem quaerat optio? Quae blanditiis</p> -->
+                </div>
+                <div class="col-6 col-lg-2 mb-3 py-3 px-3">
+                    <h5 style="color: #6c757d;" class="fw-bold py-3" data-i18n="contact">Contact us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-1 " data-i18n="home">Home</a></li>
+                        <li class="nav-item mb-2"><a data-i18n="location"
+                                href="https://www.google.com/maps/place/30°18'11.0%22N+31°44'31.7%22E/@30.3029929,31.7425591,19z/data=!4m4!3m3!8m2!3d30.3030624!4d31.7421246?entry=ttu"
+                                class="nav-link p-1" target="_blank"><i
+                                    class="fa-solid fa-location-dot fa-sm"></i>Location</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-1" data-i18n="hotLine"
+                                href="tel:+201069714555"><i class="fa-thin fa-mobile-button fa-lg"></i>HotLine</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-1 " href="tel:+201124200399"><i
+                                    class="fa-solid fa-phone fa-xs"></i>+201124200399</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-1" data-i18n="workh"><i
+                                    class="fa-solid fa-clock fa-sm"></i>Work hours:</a>
+
+                            <span style="color:#6c757d;" data-i18n="hours">
+                                From 11Am to 7Pm, From Saturday to Thursday</span>
+
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-1 disabled"></a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3 py-3 px-3">
+                    <h5 style="color: #6c757d;" class="fw-bold py-3" data-i18n="com">Company</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-1 " data-i18n="home">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="./next.html" class="nav-link p-1 "
+                                data-i18n="industry">Industry</a></li>
+                        <li class="nav-item mb-2"><a href="./real-estate.html" class="nav-link p-1 "
+                                data-i18n="realestate">Real Estate</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="./Other-services.html" class="nav-link p-1"
+                                data-i18n="other">Other
+                                Services</a></li>
+                        <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-1 " data-i18n="about">About
+                                us</a></li>
+                        <li class="nav-item mb-2"><a href="./career.html" class="nav-link p-1 "
+                                data-i18n="career">Career</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3 py-3 px-3">
+                    <h5 style="color: #6c757d;" class="fw-bold py-3" data-i18n="inrl">Industry Real Estate</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./Buy-form.html" class="nav-link p-1" data-i18n="buy">BUY &
+                                SALE</a></li>
+                        <li class="nav-item mb-2"><a href="./rent-form.html" class="nav-link p-1"
+                                data-i18n="rent">Rent</a></li>
+                        <li class="nav-item mb-2"><a href="./full-project-form.html" class="nav-link p-1"
+                                data-i18n="full">Full
+                                Project</a></li>
+                        <li class="nav-item mb-2"><a href="./real-estate.html" class="nav-link p-1"
+                                data-i18n="rlin">Real Estate
+                                Investment</a></li>
+                        <li class="nav-item mb-2"><a href="./form-seven.html" class="nav-link p-1 "
+                                data-i18n="inm">Investment
+                                management</a></li>
+                        <li class="nav-item mb-2"><a href="./form-six.html" class="nav-link p-1 "
+                                data-i18n="exe">Executive Business</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3 py-3 px-3">
+                    <h5 style="color: #6c757d;" class="fw-bold py-3" data-i18n="services">Services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./form-one.html" class="nav-link p-1 "
+                                data-i18n="acc">Accounting Business
+                            </a></li>
+                        <li class="nav-item mb-2"><a href="./form-two.html" class="nav-link p-1 "
+                                data-i18n="con">Consulting
+                                Business</a></li>
+                        <li class="nav-item mb-2"><a href="./form-three.html" class="nav-link p-1 "
+                                data-i18n="law">Lawyer Business</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="./form-four.html" class="nav-link p-1 "
+                                data-i18n="spe">Specialized
+                                Business</a></li>
+                        <li class="nav-item mb-2"><a href="./form-five.html" class="nav-link p-1 "
+                                data-i18n="lic">Licensing
+                                Business</a></li>
+                        <li class="nav-item mb-2"><a href="./form-eight.html" class="nav-link p-1 "
+                                data-i18n="coms">Companies Servics</a></li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+    <div class="d-flex flex-wrap justify-content-between container-fluid">
+        <p class="px-1" style="color: #6c757d;">&copy; 2022 Company, Inc. All rights reserved.</p>
+        <div class="mb-3 py-4 px-2">
+            <ul class="list-unstyled d-flex" id="ulLink">
+                <!--Facbook Link-->
+                <li class="ms-3"><a href="https://www.facebook.com/ALGHAZALGLOBALTRADE?mibextid=LQQJ4d"
+                        target="_blan0k"><i class="fa-brands fa-facebook fa-2xl" style="color: #1e00ff;"></i></a>
+                </li>
+                <!--Whatsapp Link-->
+                <li class="ms-3"><a href="https://wa.me/message/FBRY6MGDN23CJ1" target="_blank"><i
+                            class="fa-brands fa-whatsapp fa-2xl" style="color: #10f500;"></i></a></li>
+                <!--Instgram Link-->
+                <li class="ms-3"><a href="https://instagram.com/alghazal.global.trade?igshid=OGQ5ZDc2ODk2ZA=="
+                        target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #fa00f2;"></i></a></li>
+                <!--Twitter Link-->
+                <li class="ms-3"><a href="https://twitter.com/AlGhazalGlobalT" target="_blank"><i
+                            class="fa-brands fa-x-twitter fa-2xl"></i></a></li>
+                <!--Telgram Link-->
+                <li class="ms-3"><a href="https://t.me/ALGHAZAL_GLOBALTRADE" target="_blank"><i
+                            class="fa-brands fa-telegram fa-2xl" style="color: #70b5ff;"></i></a></li>
+                <!--Snapchat Link-->
+                <li class="ms-3"><a
+                        href="https://www.snapchat.com/add/alghazalglobalt?share_id=sMGcLl3lJDU&locale=en-CA"
+                        target="_blank"><i class="fa-brands fa-snapchat fa-2xl" style="color: #fbff00;"></i></a>
+                    <!--Linked In Link-->
+                <li class="ms-3"><a href="https://www.linkedin.com/in/alghazal-global-trade-19a82a249"
+                        target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #4986ee;"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/dark.js"></script>
+</body>
+
+</html>
